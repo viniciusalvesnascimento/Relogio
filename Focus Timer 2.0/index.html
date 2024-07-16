@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer 2.0</title>
+
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="./src/main.js" defer></script>
+</head>
+<body>
+<main class="DigitalClock">    
+<div class="watch">
+    <button id="toggle-mode">
+        <span class="sr-only"> light mode ativado</span>
+        <i class="ph-bold ph-sun"></i>
+        <i class="ph-bold ph-moon"></i>
+    </button>
+
+    <section id="timer">
+        <span id="minutes">25</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+    </section>
+
+    <section id="icon" class="flex">
+        <button
+        data-action="toggleRunning" 
+        class="ph ph-play-circle">
+        <span class="sr-only"> Iniciar contador</span>
+        </button>
+
+        <button 
+        data-action="toggleRunning"
+        class="ph ph-pause-circle">
+        <span class="sr-only"> Pausar contador</span>
+        </button>
+
+        <button
+        data-action="repeat"
+        class="ph ph-repeat">
+        <span class="sr-only"> Repetir contagem</span>
+        </button>
+
+        <button 
+        data-action="timer"
+        class="ph ph-timer">
+        <span class="sr-only"> Definir contagem</span>
+        </button>
+
+        <button 
+        data-action="mais"
+        class="ph ph-plus-circle">
+        <span class="sr-only"> Aumentar 5 minutos</span>
+        </button>
+
+        <button 
+        data-action="menos"
+        class="ph ph-minus-circle">
+        <span class="sr-only"> Diminuir 5 minutos</span>
+        </button>
+    </section>
+</div>
+
+<div id="TwoCard">
+   
+        <button data-action="MusicFloresta" class="MusicFloresta">
+            <img src="assets/card-image/Teem.png" alt=" Som de floresta">
+        </button>
+
+        <button data-action="MusicCloud">
+            <img src="assets/card-image/cloud.png" alt="Som de chuva">
+        </button>
+
+        <button data-action="MusicCaffe">
+            <img src="assets/card-image/house.png" alt="Som de cafeteira">
+        </button>
+
+        <button data-action="MusicFire">
+            <img src="assets/card-image/fire.png" alt="Som de lareira">
+        </button>
+    
+</div>
+</main>
+    
+</body>
+</html>
